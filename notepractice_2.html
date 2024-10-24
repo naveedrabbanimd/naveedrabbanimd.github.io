@@ -15,8 +15,14 @@
 
 	var noteArray = ["A", "B", "C", "D", "E", "F", "G"];
 	var stringArray = ["E", "A", "D", "G", "B"];
+
+
 	var note = shuffle(noteArray)[0];
 	var guitarString = shuffle(stringArray)[0];
+
+	while(note==guitarString) {
+		note = shuffle(noteArray)[0];
+	}
 
 	document.write("Note: " + note + "<br>String: " + guitarString);
 </script>
