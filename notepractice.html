@@ -13,11 +13,11 @@
 	    return arr;
 	}
 
-	var noteArray = ["A", "B", "C", "D", "E", "F", "G"];
+	var noteArray = ["A", "B", "B&#9837", "C", "D", "E", "F", "G"];
 	var shuffled = shuffle(noteArray).slice(0,3);
 
 	for (let i=0; i<3; i++) {
-		document.write(shuffled[i]);
+		document.write(shuffled[i] + ' ');
 	}
 </script>
 </html>
