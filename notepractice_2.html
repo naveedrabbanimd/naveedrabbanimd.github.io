@@ -13,17 +13,20 @@
 	    return arr;
 	}
 
-	var noteArray = ["A", "A&#9837", "B", "B&#9837", "C", "D&#9837", "D", "E", "E&#9837", "F", "G"];
+	var noteArray = ["A&#9837", "A", "B&#9837", "B", "C", "C#/D&#9837", "D", "E&#9837", "E", "F", "F#/G&#9837", "G"];
 	var stringArray = ["E", "A", "D", "G", "B"];
-
+	var intervalArray = ["m2", "M2", "m3", "M3", "P4", "A4/d5", "P5", "m6", "M6", "m7", "M7"]
 
 	var note = shuffle(noteArray)[0];
 	var guitarString = shuffle(stringArray)[0];
+	var interval = shuffle(intervalArray)[0];
 
 	while(note==guitarString) {
 		note = shuffle(noteArray)[0];
 	}
 
-	document.write("Note: " + note + "<br>String: " + guitarString);
+	document.write("String: " + guitarString + "<br>Note: " + note + "<br>Interval: " + interval);
 </script>
+<body style="background-color: #000; color: #fff">
+</body>
 </html>
